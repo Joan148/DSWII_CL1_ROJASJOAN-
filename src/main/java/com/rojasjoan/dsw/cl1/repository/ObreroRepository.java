@@ -10,7 +10,7 @@ import java.util.Map;
 public class ObreroRepository {
     private Map<String, Obrero> obreros = new HashMap<>();
 
-    public ObreroRepository(){
+    /*public ObreroRepository(){
         Obrero obrero = new Obrero();
         //OBRERO1
         obrero.setHoras(40);
@@ -19,26 +19,28 @@ public class ObreroRepository {
         obrero = new Obrero();
         obrero.setHoras(45);
         obreros.put("Obrero2", obrero);
-    }
+    }*/
 
-    public double calcularSalario(Obrero obrero) {
-        int horas = obrero.getHoras();
-        int horasLimite = obrero.getHorasLimite();
+    public Obrero calcularSalario(int horasTrabajadas) {
+        Obrero obrero = new Obrero();
+        obrero.setHoras(horasTrabajadas);
+        int horasLimite = 40;
         int horasExtra = 0;
         double salarioHora = 16;
         double salarioHoraextra = 20;
         double salarioFinal;
 
-        if(horas <= horasLimite) {
-            salarioFinal = salarioHora * horas;
+        if (horasTrabajadas <= horasLimite) {
+            salarioFinal = salarioHora * horasTrabajadas;
         } else {
-            horasExtra = horas - horasLimite;
+            horasExtra = horasTrabajadas - horasLimite;
             salarioFinal = (salarioHora * horasLimite) + (salarioHoraextra * horasExtra);
             obrero.setHorasExtra(horasExtra);
             obrero.setSalarioHoraextra(salarioHoraextra * horasExtra);
         }
         obrero.setSalarioFinal(salarioFinal);
-        return salarioFinal;
+        return obrero;
     }
+
 
 }
