@@ -10,7 +10,6 @@ package pe.cl1.joan_rojas.ws.objects;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
 
@@ -25,7 +24,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="obrero" type="{http://www.joan-rojas.cl1.pe/ws/objects}obrero"/&gt;
+ *         &lt;element name="segundos" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -36,36 +35,27 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "obrero"
+    "segundos"
 })
-@XmlRootElement(name = "calcularSalarioResponse")
-public class CalcularSalarioResponse {
+@XmlRootElement(name = "TiempoResponse")
+public class TiempoResponse {
 
-    @XmlElement(required = true)
-    protected Obrero obrero;
+    protected int segundos;
 
     /**
-     * Obtiene el valor de la propiedad obrero.
+     * Obtiene el valor de la propiedad segundos.
      * 
-     * @return
-     *     possible object is
-     *     {@link Obrero }
-     *     
      */
-    public Obrero getObrero() {
-        return obrero;
+    public int getSegundos() {
+        return segundos;
     }
 
     /**
-     * Define el valor de la propiedad obrero.
+     * Define el valor de la propiedad segundos.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Obrero }
-     *     
      */
-    public void setObrero(Obrero value) {
-        this.obrero = value;
+    public void setSegundos(int value) {
+        this.segundos = value;
     }
 
 }

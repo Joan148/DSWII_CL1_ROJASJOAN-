@@ -94,6 +94,7 @@
 
 						<source>${project.basedir}/src/main/resources/xsd/obrero.xsd</source>
 						<source>${project.basedir}/src/main/resources/xsd/practica.xsd</source>
+						<source>${project.basedir}/src/main/resources/xsd/tiempo.xsd</source>
 
 					</sources>
 

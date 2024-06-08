@@ -50,4 +50,19 @@ public class WebServiceConfig {
     public XsdSchema practicaSchema() {
         return new SimpleXsdSchema(new ClassPathResource("xsd/practica.xsd"));
     }
+
+    @Bean(name = "tiempo")
+    public DefaultWsdl11Definition tiempoWsdl11Definition(XsdSchema tiempoSchema) {
+        DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
+        wsdl11Definition.setPortTypeName("TiempoPort");
+        wsdl11Definition.setLocationUri("/ws/tiempo");
+        wsdl11Definition.setTargetNamespace("http://www.joan-rojas.cl1.pe/ws/objects");
+        wsdl11Definition.setSchema(tiempoSchema);
+        return wsdl11Definition;
+    }
+
+    @Bean
+    public XsdSchema tiempoSchema() {
+        return new SimpleXsdSchema(new ClassPathResource("xsd/tiempo.xsd"));
+    }
 }
