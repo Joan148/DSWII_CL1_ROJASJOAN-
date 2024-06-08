@@ -80,4 +80,19 @@ public class WebServiceConfig {
     public XsdSchema numeroSchema() {
         return new SimpleXsdSchema(new ClassPathResource("xsd/numero.xsd"));
     }
+
+    @Bean(name = "cuadrado")
+    public DefaultWsdl11Definition cuadradoWsdl11Definition(XsdSchema cuadradoSchema) {
+        DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
+        wsdl11Definition.setPortTypeName("CuadradoPort");
+        wsdl11Definition.setLocationUri("/ws/cuadrado");
+        wsdl11Definition.setTargetNamespace("http://www.joan-rojas.cl1.pe/ws/objects");
+        wsdl11Definition.setSchema(cuadradoSchema);
+        return wsdl11Definition;
+    }
+
+    @Bean
+    public XsdSchema cuadradosSchema() {
+        return new SimpleXsdSchema(new ClassPathResource("xsd/cuadrado.xsd"));
+    }
 }

@@ -96,6 +96,7 @@
 						<source>${project.basedir}/src/main/resources/xsd/practica.xsd</source>
 						<source>${project.basedir}/src/main/resources/xsd/tiempo.xsd</source>
 						<source>${project.basedir}/src/main/resources/xsd/numero.xsd</source>
+						<source>${project.basedir}/src/main/resources/xsd/cuadrado.xsd</source>
 
 					</sources>
 

@@ -1,0 +1,28 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://www.joan-rojas.cl1.pe/ws/objects"
+           targetNamespace="http://www.joan-rojas.cl1.pe/ws/objects"
+           elementFormDefault="qualified">
+
+    <xs:element name="CuadradoResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Numeros" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="numero" type="xs:int"/>
+                            <xs:element name="cuadrado" type="xs:int"/>
+                            <xs:element name="mitad" type="xs:double"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="CuadradosRequest">
+        <xs:complexType>
+            <xs:sequence/>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
