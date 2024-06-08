@@ -1,0 +1,37 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://www.joan-rojas.cl1.pe/ws/objects"
+           targetNamespace="http://www.joan-rojas.cl1.pe/ws/objects"
+           elementFormDefault="qualified">
+
+    <xs:complexType name="Estudiante">
+        <xs:sequence>
+            <xs:element name="nota1" type="xs:int"/>
+            <xs:element name="nota2" type="xs:int"/>
+            <xs:element name="nota3" type="xs:int"/>
+            <xs:element name="nota4" type="xs:int"/>
+            <xs:element name="nota_menor" type="xs:int"/>
+            <xs:element name="promedio" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="EstudianteRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nota1" type="xs:int"/>
+                <xs:element name="nota2" type="xs:int"/>
+                <xs:element name="nota3" type="xs:int"/>
+                <xs:element name="nota4" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="EstudianteResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nota_menor" type="xs:int"/>
+                <xs:element name="promedio" type="xs:double"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

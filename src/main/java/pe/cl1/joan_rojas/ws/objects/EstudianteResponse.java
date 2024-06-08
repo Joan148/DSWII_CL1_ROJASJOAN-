@@ -25,7 +25,8 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="obrero" type="{http://www.joan-rojas.cl1.pe/ws/objects}obrero"/&gt;
+ *         &lt;element name="nota_menor" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="promedio" type="{http://www.w3.org/2001/XMLSchema}double"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -36,36 +37,46 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "obrero"
+    "notaMenor",
+    "promedio"
 })
-@XmlRootElement(name = "calcularSalarioResponse")
-public class CalcularSalarioResponse {
+@XmlRootElement(name = "EstudianteResponse")
+public class EstudianteResponse {
 
-    @XmlElement(required = true)
-    protected Obrero obrero;
+    @XmlElement(name = "nota_menor")
+    protected int notaMenor;
+    protected double promedio;
 
     /**
-     * Obtiene el valor de la propiedad obrero.
+     * Obtiene el valor de la propiedad notaMenor.
      * 
-     * @return
-     *     possible object is
-     *     {@link Obrero }
-     *     
      */
-    public Obrero getObrero() {
-        return obrero;
+    public int getNotaMenor() {
+        return notaMenor;
     }
 
     /**
-     * Define el valor de la propiedad obrero.
+     * Define el valor de la propiedad notaMenor.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Obrero }
-     *     
      */
-    public void setObrero(Obrero value) {
-        this.obrero = value;
+    public void setNotaMenor(int value) {
+        this.notaMenor = value;
+    }
+
+    /**
+     * Obtiene el valor de la propiedad promedio.
+     * 
+     */
+    public double getPromedio() {
+        return promedio;
+    }
+
+    /**
+     * Define el valor de la propiedad promedio.
+     * 
+     */
+    public void setPromedio(double value) {
+        this.promedio = value;
     }
 
 }

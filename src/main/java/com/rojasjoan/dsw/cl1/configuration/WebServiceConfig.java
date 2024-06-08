@@ -36,4 +36,18 @@ public class WebServiceConfig {
         return new SimpleXsdSchema(new ClassPathResource("xsd/obrero.xsd"));
     }
 
+    @Bean(name = "practica")
+    public DefaultWsdl11Definition practicaWsdl11Definition(XsdSchema practicaSchema) {
+        DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
+        wsdl11Definition.setPortTypeName("PracticaPort");
+        wsdl11Definition.setLocationUri("/ws/practica");
+        wsdl11Definition.setTargetNamespace("http://www.joan-rojas.cl1.pe/ws/objects");
+        wsdl11Definition.setSchema(practicaSchema);
+        return wsdl11Definition;
+    }
+
+    @Bean
+    public XsdSchema practicaSchema() {
+        return new SimpleXsdSchema(new ClassPathResource("xsd/practica.xsd"));
+    }
 }

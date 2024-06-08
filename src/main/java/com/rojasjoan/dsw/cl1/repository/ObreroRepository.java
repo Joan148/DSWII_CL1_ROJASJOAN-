@@ -10,16 +10,6 @@ import java.util.Map;
 public class ObreroRepository {
     private Map<String, Obrero> obreros = new HashMap<>();
 
-    /*public ObreroRepository(){
-        Obrero obrero = new Obrero();
-        //OBRERO1
-        obrero.setHoras(40);
-        obreros.put("Obrero1", obrero);
-        //OBRERO2
-        obrero = new Obrero();
-        obrero.setHoras(45);
-        obreros.put("Obrero2", obrero);
-    }*/
 
     public Obrero calcularSalario(int horasTrabajadas) {
         Obrero obrero = new Obrero();
