@@ -1,0 +1,28 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://www.joan-rojas.cl1.pe/ws/objects"
+           targetNamespace="http://www.joan-rojas.cl1.pe/ws/objects"
+           elementFormDefault="qualified">
+
+    <xs:complexType name="Numero">
+        <xs:sequence>
+            <xs:element name="limite" type="xs:int"/>
+            <xs:element name="suma" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="NumeroRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="limite" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="NumeroResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="suma" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -10,7 +10,6 @@ package pe.cl1.joan_rojas.ws.objects;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
 
@@ -25,8 +24,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="nota_menor" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="promedio" type="{http://www.w3.org/2001/XMLSchema}double"/&gt;
+ *         &lt;element name="suma" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -37,46 +35,27 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "notaMenor",
-    "promedio"
+    "suma"
 })
-@XmlRootElement(name = "EstudianteResponse")
-public class EstudianteResponse {
+@XmlRootElement(name = "NumeroResponse")
+public class NumeroResponse {
 
-    @XmlElement(name = "nota_menor")
-    protected int notaMenor;
-    protected double promedio;
+    protected int suma;
 
     /**
-     * Obtiene el valor de la propiedad notaMenor.
+     * Obtiene el valor de la propiedad suma.
      * 
      */
-    public int getNotaMenor() {
-        return notaMenor;
+    public int getSuma() {
+        return suma;
     }
 
     /**
-     * Define el valor de la propiedad notaMenor.
+     * Define el valor de la propiedad suma.
      * 
      */
-    public void setNotaMenor(int value) {
-        this.notaMenor = value;
-    }
-
-    /**
-     * Obtiene el valor de la propiedad promedio.
-     * 
-     */
-    public double getPromedio() {
-        return promedio;
-    }
-
-    /**
-     * Define el valor de la propiedad promedio.
-     * 
-     */
-    public void setPromedio(double value) {
-        this.promedio = value;
+    public void setSuma(int value) {
+        this.suma = value;
     }
 
 }

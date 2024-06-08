@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.06.08 a las 05:14:05 PM PET 
+// Generado el: 2024.06.08 a las 05:39:33 PM PET 
 //
 
 
@@ -34,6 +34,22 @@ public class ObjectFactory {
      * 
      */
     public ObjectFactory() {
+    }
+
+    /**
+     * Create an instance of {@link NumeroRequest }
+     * 
+     */
+    public NumeroRequest createNumeroRequest() {
+        return new NumeroRequest();
+    }
+
+    /**
+     * Create an instance of {@link NumeroResponse }
+     * 
+     */
+    public NumeroResponse createNumeroResponse() {
+        return new NumeroResponse();
     }
 
     /**
@@ -90,6 +106,14 @@ public class ObjectFactory {
      */
     public TiempoResponse createTiempoResponse() {
         return new TiempoResponse();
+    }
+
+    /**
+     * Create an instance of {@link Numero }
+     * 
+     */
+    public Numero createNumero() {
+        return new Numero();
     }
 
     /**
