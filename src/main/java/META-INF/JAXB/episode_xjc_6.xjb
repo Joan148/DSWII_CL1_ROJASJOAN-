@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2024.06.08 a las 07:00:18 PM PET 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.joan-rojas.cl1.pe/ws/objects">
+    <schemaBindings map="false">
+      <package name="pe.cl1.joan_rojas.ws.objects"/>
+    </schemaBindings>
+    <bindings scd="tns:CuadradoResponse">
+      <class ref="pe.cl1.joan_rojas.ws.objects.CuadradoResponse"/>
+    </bindings>
+    <bindings scd="tns:CuadradosRequest">
+      <class ref="pe.cl1.joan_rojas.ws.objects.CuadradosRequest"/>
+    </bindings>
+    <bindings scd="tns:getMedicosRequest">
+      <class ref="pe.cl1.joan_rojas.ws.objects.GetMedicosRequest"/>
+    </bindings>
+    <bindings scd="tns:getMedicosResponse">
+      <class ref="pe.cl1.joan_rojas.ws.objects.GetMedicosResponse"/>
+    </bindings>
+    <bindings scd="~tns:medicows">
+      <class ref="pe.cl1.joan_rojas.ws.objects.Medicows"/>
+    </bindings>
+    <bindings scd="tns:getMedicoRequest">
+      <class ref="pe.cl1.joan_rojas.ws.objects.GetMedicoRequest"/>
+    </bindings>
+    <bindings scd="tns:getMedicoResponse">
+      <class ref="pe.cl1.joan_rojas.ws.objects.GetMedicoResponse"/>
+    </bindings>
+    <bindings scd="tns:postMedicoRequest">
+      <class ref="pe.cl1.joan_rojas.ws.objects.PostMedicoRequest"/>
+    </bindings>
+    <bindings scd="tns:postMedicoResponse">
+      <class ref="pe.cl1.joan_rojas.ws.objects.PostMedicoResponse"/>
+    </bindings>
+    <bindings scd="tns:NumeroRequest">
+      <class ref="pe.cl1.joan_rojas.ws.objects.NumeroRequest"/>
+    </bindings>
+    <bindings scd="tns:NumeroResponse">
+      <class ref="pe.cl1.joan_rojas.ws.objects.NumeroResponse"/>
+    </bindings>
+    <bindings scd="tns:calcularSalarioRequest">
+      <class ref="pe.cl1.joan_rojas.ws.objects.CalcularSalarioRequest"/>
+    </bindings>
+    <bindings scd="tns:calcularSalarioResponse">
+      <class ref="pe.cl1.joan_rojas.ws.objects.CalcularSalarioResponse"/>
+    </bindings>
+    <bindings scd="~tns:obrero">
+      <class ref="pe.cl1.joan_rojas.ws.objects.Obrero"/>
+    </bindings>
+    <bindings scd="tns:EstudianteRequest">
+      <class ref="pe.cl1.joan_rojas.ws.objects.EstudianteRequest"/>
+    </bindings>
+    <bindings scd="tns:EstudianteResponse">
+      <class ref="pe.cl1.joan_rojas.ws.objects.EstudianteResponse"/>
+    </bindings>
+    <bindings scd="tns:TiempoRequest">
+      <class ref="pe.cl1.joan_rojas.ws.objects.TiempoRequest"/>
+    </bindings>
+    <bindings scd="tns:TiempoResponse">
+      <class ref="pe.cl1.joan_rojas.ws.objects.TiempoResponse"/>
+    </bindings>
+    <bindings scd="~tns:Numero">
+      <class ref="pe.cl1.joan_rojas.ws.objects.Numero"/>
+    </bindings>
+    <bindings scd="~tns:Estudiante">
+      <class ref="pe.cl1.joan_rojas.ws.objects.Estudiante"/>
+    </bindings>
+    <bindings scd="~tns:Tiempo">
+      <class ref="pe.cl1.joan_rojas.ws.objects.Tiempo"/>
+    </bindings>
+  </bindings>
+</bindings>
+

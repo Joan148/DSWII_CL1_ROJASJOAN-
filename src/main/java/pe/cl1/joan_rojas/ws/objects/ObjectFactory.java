@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.06.08 a las 06:28:38 PM PET 
+// Generado el: 2024.06.08 a las 07:00:18 PM PET 
 //
 
 
@@ -58,6 +58,62 @@ public class ObjectFactory {
      */
     public CuadradosRequest createCuadradosRequest() {
         return new CuadradosRequest();
+    }
+
+    /**
+     * Create an instance of {@link GetMedicosRequest }
+     * 
+     */
+    public GetMedicosRequest createGetMedicosRequest() {
+        return new GetMedicosRequest();
+    }
+
+    /**
+     * Create an instance of {@link GetMedicosResponse }
+     * 
+     */
+    public GetMedicosResponse createGetMedicosResponse() {
+        return new GetMedicosResponse();
+    }
+
+    /**
+     * Create an instance of {@link Medicows }
+     * 
+     */
+    public Medicows createMedicows() {
+        return new Medicows();
+    }
+
+    /**
+     * Create an instance of {@link GetMedicoRequest }
+     * 
+     */
+    public GetMedicoRequest createGetMedicoRequest() {
+        return new GetMedicoRequest();
+    }
+
+    /**
+     * Create an instance of {@link GetMedicoResponse }
+     * 
+     */
+    public GetMedicoResponse createGetMedicoResponse() {
+        return new GetMedicoResponse();
+    }
+
+    /**
+     * Create an instance of {@link PostMedicoRequest }
+     * 
+     */
+    public PostMedicoRequest createPostMedicoRequest() {
+        return new PostMedicoRequest();
+    }
+
+    /**
+     * Create an instance of {@link PostMedicoResponse }
+     * 
+     */
+    public PostMedicoResponse createPostMedicoResponse() {
+        return new PostMedicoResponse();
     }
 
     /**

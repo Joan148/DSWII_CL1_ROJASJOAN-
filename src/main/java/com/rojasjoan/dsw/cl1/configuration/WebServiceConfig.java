@@ -22,7 +22,7 @@ public class WebServiceConfig {
         servlet.setTransformWsdlLocations(true);
         return new ServletRegistrationBean<>(servlet,"/ws/*");
     }
-    @Bean(name = "obrero")
+    /*@Bean(name = "obrero")
     public DefaultWsdl11Definition obreroWsdl11Definition(XsdSchema obreroSchema){
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
         wsdl11Definition.setPortTypeName("ObreroPort");
@@ -82,17 +82,32 @@ public class WebServiceConfig {
     }
 
     @Bean(name = "cuadrado")
-    public DefaultWsdl11Definition cuadradoWsdl11Definition(XsdSchema cuadradoSchema) {
+    public DefaultWsdl11Definition cuadradosWsdl11Definition(XsdSchema cuadradosSchema) {
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
         wsdl11Definition.setPortTypeName("CuadradoPort");
         wsdl11Definition.setLocationUri("/ws/cuadrado");
         wsdl11Definition.setTargetNamespace("http://www.joan-rojas.cl1.pe/ws/objects");
-        wsdl11Definition.setSchema(cuadradoSchema);
+        wsdl11Definition.setSchema(cuadradosSchema);
         return wsdl11Definition;
     }
 
     @Bean
     public XsdSchema cuadradosSchema() {
         return new SimpleXsdSchema(new ClassPathResource("xsd/cuadrado.xsd"));
+    }*/
+
+    @Bean(name = "medico")
+    public DefaultWsdl11Definition medicoWsdl11Definition(XsdSchema medicoSchema) {
+        DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
+        wsdl11Definition.setPortTypeName("MedicoPort");
+        wsdl11Definition.setLocationUri("/ws/Medico");
+        wsdl11Definition.setTargetNamespace("http://www.joan-rojas.cl1.pe/ws/objects");
+        wsdl11Definition.setSchema(medicoSchema);
+        return wsdl11Definition;
+    }
+
+    @Bean
+    public XsdSchema medicoSchema() {
+        return new SimpleXsdSchema(new ClassPathResource("xsd/medico.xsd"));
     }
 }

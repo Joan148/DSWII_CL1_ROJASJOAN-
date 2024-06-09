@@ -25,7 +25,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="obrero" type="{http://www.joan-rojas.cl1.pe/ws/objects}obrero"/&gt;
+ *         &lt;element name="medico" type="{http://www.joan-rojas.cl1.pe/ws/objects}medicows"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -36,36 +36,36 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "obrero"
+    "medico"
 })
-@XmlRootElement(name = "calcularSalarioResponse")
-public class CalcularSalarioResponse {
+@XmlRootElement(name = "getMedicoResponse")
+public class GetMedicoResponse {
 
     @XmlElement(required = true)
-    protected Obrero obrero;
+    protected Medicows medico;
 
     /**
-     * Obtiene el valor de la propiedad obrero.
+     * Obtiene el valor de la propiedad medico.
      * 
      * @return
      *     possible object is
-     *     {@link Obrero }
+     *     {@link Medicows }
      *     
      */
-    public Obrero getObrero() {
-        return obrero;
+    public Medicows getMedico() {
+        return medico;
     }
 
     /**
-     * Define el valor de la propiedad obrero.
+     * Define el valor de la propiedad medico.
      * 
      * @param value
      *     allowed object is
-     *     {@link Obrero }
+     *     {@link Medicows }
      *     
      */
-    public void setObrero(Obrero value) {
-        this.obrero = value;
+    public void setMedico(Medicows value) {
+        this.medico = value;
     }
 
 }

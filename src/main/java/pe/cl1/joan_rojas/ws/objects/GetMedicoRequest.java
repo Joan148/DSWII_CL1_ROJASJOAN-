@@ -10,7 +10,6 @@ package pe.cl1.joan_rojas.ws.objects;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
 
@@ -25,7 +24,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="obrero" type="{http://www.joan-rojas.cl1.pe/ws/objects}obrero"/&gt;
+ *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -36,36 +35,27 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "obrero"
+    "id"
 })
-@XmlRootElement(name = "calcularSalarioResponse")
-public class CalcularSalarioResponse {
+@XmlRootElement(name = "getMedicoRequest")
+public class GetMedicoRequest {
 
-    @XmlElement(required = true)
-    protected Obrero obrero;
+    protected int id;
 
     /**
-     * Obtiene el valor de la propiedad obrero.
+     * Obtiene el valor de la propiedad id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Obrero }
-     *     
      */
-    public Obrero getObrero() {
-        return obrero;
+    public int getId() {
+        return id;
     }
 
     /**
-     * Define el valor de la propiedad obrero.
+     * Define el valor de la propiedad id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Obrero }
-     *     
      */
-    public void setObrero(Obrero value) {
-        this.obrero = value;
+    public void setId(int value) {
+        this.id = value;
     }
 
 }
